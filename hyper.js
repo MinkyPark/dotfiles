@@ -182,7 +182,7 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-    'pane:splitHorizontal': 'ctrl+alt+o',
-    'pane:splitVertical': 'ctrl+alt+e',
+    'pane:splitHorizontal': ['ctrl+alt+o', 'ctrl+cmd+o'],
+    'pane:splitVertical': ['ctrl+alt+e', 'ctrl+cmd+e'],
   },
 };
