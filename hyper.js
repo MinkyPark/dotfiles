@@ -140,10 +140,10 @@ module.exports = {
       debug: false,
       hotkeys: {
         navigation: {
-          up: 'alt+up',
-          down: 'alt+down',
-          left: 'alt+left',
-          right: 'alt+right'
+          up: 'alt+k',
+          down: 'alt+j',
+          left: 'alt+h',
+          right: 'alt+l'
         },
         jump_prefix: 'ctrl+alt', // completed with 1-9 digits
         permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
