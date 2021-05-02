@@ -103,7 +103,7 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: '',
+    shell: '/bin/zsh',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
@@ -140,10 +140,10 @@ module.exports = {
       debug: false,
       hotkeys: {
         navigation: {
-          up: 'alt+k',
-          down: 'alt+j',
-          left: 'alt+h',
-          right: 'alt+l'
+          up: 'ctrl+k',
+          down: 'ctrl+j',
+          left: 'ctrl+h',
+          right: 'ctrl+l',
         },
         jump_prefix: 'ctrl+alt', // completed with 1-9 digits
         permutation_modifier: 'shift', // Added to jump and navigation hotkeys for pane permutation
@@ -170,9 +170,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [
-    "hyper-pane",
-  ],
+  plugins: ["hyper-pane", "hyperline"],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
@@ -182,7 +180,10 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-    'pane:splitHorizontal': ['ctrl+alt+o', 'ctrl+cmd+o'],
-    'pane:splitVertical': ['ctrl+alt+e', 'ctrl+cmd+e'],
+    'pane:splitHorizontal': ['ctrl+o'],
+    'pane:splitVertical': ['ctrl+e'],
+    'tab:new': ['alt+t', 'cmd+t'],
+    'tab:prev': ['alt+h', 'cmd+h'],
+    'tab:next': ['alt+l', 'cmd+l'],
   },
 };
